@@ -1,0 +1,142 @@
+#shop {
+    position: relative;
+    left: 0;
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.item {
+    position: relative;
+    margin: 2vw;
+    width: 13vw;
+    height: 13vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 1s;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    text-justify:auto;
+}
+
+.shadow {
+    position: absolute;
+    bottom: -2vh;
+    width: 100%;
+    height: 2vh;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.caption {
+    width: 100%;
+    position: absolute;
+    bottom: -3vw;
+    font-size: 1vw;
+}
+
+.item:hover {
+    background-size: 200%;
+}
+
+#first {
+    background-image: url('images/fuzzy-leopard-pillows.jpg');
+}
+
+#second {
+    background-image: url('images/couchpillow.jpg');
+}
+
+#third {
+    background-image: url('images/geometric-throw-pillow-071116-1014-01a-800x608.jpg');
+}
+
+#fourth {
+    background-image: url('images/Bombay-Dyeing-Single-Fibre-Pillow-SDL999752025-4-22bc1.jpg')
+}
+
+#fifth {
+    background-image: url('images/Ultra-Folding-Pillow-Panda-17x13-SDL233111282-2-7c44a.jpg')
+}
+
+#sixth {
+    background-image: url('images/R.jpg')
+}
+
+table {
+    margin-bottom: 3vw;
+    width: 20vw;
+}
+
+#buying {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10vw;
+    margin-top: 13vw;
+}
+
+table td {
+    text-align: center;
+}
+
+.quantity {
+    font-size: 2vw;
+}
+
+#purchase {
+    display: table;
+}
+
+#wholePage {
+    width: 100%;
+    display: table;
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-device-width: 600px)  {
+    .row {
+        flex-direction: column;
+    }
+    .item {
+        width: 50vw;
+        height: 50vw;
+        margin: 10vw;
+    }
+
+    #shop {
+        display: table;
+        width: 100%;
+    }
+
+    .caption {
+        bottom: -10vw;
+        font-size: 2vw;
+    }
+
+    #buying {
+        position: relative;
+        margin: auto;
+        right: auto;
+        top: auto;
+    }
+}
