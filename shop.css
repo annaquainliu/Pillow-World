@@ -139,4 +139,8 @@ table td {
         right: auto;
         top: auto;
     }
+
+    .quantity {
+        font-size: 4vw;
+    }
 }
