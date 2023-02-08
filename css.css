@@ -85,6 +85,7 @@ p, h1, .text, .caption {
 }
 
 #description {
+    position: relative;
     width: 100%;
     text-align: center;
     z-index: 5;
